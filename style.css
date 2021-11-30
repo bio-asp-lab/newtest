@@ -2712,7 +2712,7 @@ body,
   content: "";
   height: 350px;
   width: 350px;
-  background: #eab229;
+  background: #ffde8a;
   z-index: -1;
   transform: translate(-50%, -50%);
   border-radius: 50%;
@@ -2725,7 +2725,7 @@ body,
   content: "";
   height: 450px;
   width: 450px;
-  background: #eab229;
+  background: #fbd063;
   z-index: -1;
   transform: translate(-50%, -50%);
   border-radius: 50%;
@@ -4265,6 +4265,8 @@ body,
 
 .courses-area .courses-items .meta {
   text-transform: capitalize;
+  font-size: 1px;
+  color: #5e5e5e;
 }
 
 .courses-area.trend-layout .courses-items .meta {
@@ -4417,6 +4419,7 @@ body,
 
 .courses-area.trend-layout .courses-items .bottom-info ul {
   margin-bottom: 15px;
+  text-align: right;
 }
 
 .courses-area.trend-layout .courses-items .bottom-info ul li {
@@ -4440,14 +4443,15 @@ body,
 .courses-area .fixed-shape {
   position: absolute;
   left: 0;
-  top: -10%;
-  z-index: -9;
-  width: 30%;
-  opacity: 0.05;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
 }
 
 .courses-area .courses-box .single-item {
   margin-bottom: 30px;
+  
 }
 
 .courses-area .courses-box .item {
@@ -4603,7 +4607,6 @@ body,
   top: -10%;
   z-index: -9;
   width: 30%;
-  opacity: 0.05;
 }
 
 .course-area .single-item {
@@ -5345,6 +5348,7 @@ body,
 
 .advisor-details-area .info h2 {
   font-weight: 700;
+  font-size: 28px;
   text-transform: capitalize;
   margin-bottom: 5px;
 }
@@ -5681,12 +5685,13 @@ body,
 
 .gallery-area .magnific-mix-gallery {
   margin: -15px;
+  
 }
 
 .gallery-area .gallery-items.colums-3 .pf-item {
   float: left;
-  padding: 15px;
-  width: 33.3333%;
+  padding: 10px;
+  width: 30%;
 }
 
 .gallery-area .gallery-items.colums-2 .pf-item {
@@ -5756,7 +5761,7 @@ body,
   line-height: 60px;
   background: #ffffff;
   border-radius: 50%;
-  color: #FF1949;
+  color: #4e84f6;
   opacity: 0;
   box-shadow: 0 0 10px #cccccc;
 }
@@ -7301,6 +7306,7 @@ body,
 .login-area, 
 .login-area div {
   height: 100%;
+  background: #ffffff;
 }
 
 .login-area div.login, 
@@ -7309,12 +7315,12 @@ body,
 }
 
 .login-area .login-box {
-  display: table;
+ 
   width: 100%;
 }
 
 .login-area .login-box .login {
-  display: table-cell;
+
   height: auto;
   vertical-align: middle;
 }
