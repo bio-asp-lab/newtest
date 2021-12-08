@@ -6460,10 +6460,17 @@ body,
   margin-bottom: 0;
 }
 
+
 .blog-area .sidebar .sidebar-item.category .sidebar-info, 
 .blog-area .sidebar .sidebar-item.archives .sidebar-info {
   margin-top: -5px;
 }
+
+@media screen and (max-width:768px) { 
+  .archives{display: none;}
+  .category{display: none;}
+}
+
 
 .blog-area .sidebar .sidebar-item.category li {
   display: block;
@@ -6488,6 +6495,8 @@ body,
   font-size: 14px;
   margin-left: 5px;
 }
+
+
 
 .blog-area .sidebar .sidebar-item.category li:first-child a span {
   top: 0;
@@ -6626,19 +6635,15 @@ body,
 
 .sidebar-item.archives ul li a {
   display: inline-block;
-  font-weight: 800;
   text-transform: capitalize;
-  z-index: 1;
-  padding-left: 25px;
-  font-size: 14px;
-  color: #666666;
+  font-weight: 700;
+  color: #464646;
 }
 
 .sidebar-item.archives ul li a::after {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  content: "\f07b";
   font-family: "Font Awesome 5 Free";
   height: 8px;
   left: 0;
@@ -6730,6 +6735,34 @@ body,
   text-align: center;
   position: relative;
   z-index: 1;
+}
+
+.blog-area .phone-archives {
+  display: none;
+  text-align: center;
+
+}
+
+.blog-area .phone-archives .sidebar-info ul {
+  display: inline;
+  text-align: center;
+}
+
+.blog-area .phone-archives .sidebar-info ul li {
+  display: inline;
+  margin:10px;
+  font-size: 18px;
+  color: #000;
+}
+
+.blog-area .phone-archives .sidebar-info ul li a{
+  font-weight: 600;
+  color: #000;
+}
+
+
+@media screen and (max-width:768px) { 
+  .phone-archives {display:inline !important;}
 }
 
 .blog-area .sidebar .sidebar-item.add-banner .sidebar-info::after {
@@ -7675,4 +7708,24 @@ footer.bg-dark .footer-bottom {
   z-index: 999999;
   background: url(assets/img/preloader.gif) center no-repeat #ffffff;
   text-align: center;
+}
+
+#gotop {
+  position:fixed;
+  z-index:90;
+  right:30px;
+  bottom:31px;
+  display:none;
+  width:50px;
+  height:50px;
+  color:#fff;
+  background:royalblue;
+  line-height:50px;
+  border-radius:50%;
+  transition:all 0.2s;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#gotop :hover{
+  background:royalblue;
 }
