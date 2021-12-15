@@ -37,6 +37,26 @@
       <script src="assets/js/html5/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            /* 按下GoTop按鈕時的事件 */
+            $('#gotop').click(function(){
+                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                return false;
+            });
+            
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 400){
+                    $('#gotop').fadeIn();
+                } else {
+                    $('#gotop').fadeOut();
+                }
+            });
+        });
+        </script>  
+
     
 
 </head>
@@ -136,13 +156,13 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="resources.html" class="dropdown-toggle" data-toggle="dropdown" >Resources</a>
+                            <a href="Opensource.html" class="dropdown-toggle" data-toggle="dropdown" >Resources</a>
                             <ul class="dropdown-menu">
                                 <li><a href="log-in.html">Internal Source</a></li>
-                                <li><a href="resources.html#SE">Speech Enhancement Tools</a></li>
-                                <li><a href="resources.html#BSP">Biomedical Signal Processing</a></li>
-                                <li><a href="resources.html#ET">Evaluation Tool</a></li>
-                                <li><a href="resources.html#Dataset">Dataset</a></li>
+                                <li><a href="Opensource.html#SE">Speech Enhancement Tools</a></li>
+                                <li><a href="Opensource.html#BSP">Biomedical Signal Processing</a></li>
+                                <li><a href="Opensource.html#ET">Evaluation Tool</a></li>
+                                <li><a href="Opensource.html#Dataset">Dataset</a></li>
                             </ul>
                         </li>
 
@@ -185,6 +205,20 @@
     <div class="blog-area full-blog right-sidebar  default-padding">
         <div class="container">
             <div class="blog-items">
+                <div class="phone-archives" >
+                    <div class="sidebar-info" style="margin-bottom: 60px;">
+                        <ul>
+                            <li><a href="#r2019">2019</a></li>
+                            <li><a href="#r2018">2018</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <a href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" id="gotop">
+                        <i class="fa fa-angle-up"></i>
+                     </a>
+
                 <div class="row">
                     <div class="blog-content col-lg-8 col-md-12">
                         <div class="blog-item-box">
@@ -418,7 +452,7 @@
                                     <a href="publication.html">Publications</a>
                                 </li>
                                 <li>
-                                    <a href="resources.html">Resources</a>
+                                    <a href="Opensource.html">Resources</a>
                                 </li>
                                 <li>
                                     <a href="album.html">Activities</a>
